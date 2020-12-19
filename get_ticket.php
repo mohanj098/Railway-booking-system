@@ -1,6 +1,6 @@
 <?php 
 
-    $con = new PDO('pgsql:host=localhost;dbname=project', 'postgres', '7809');
+    $con = new PDO('pgsql:host=ec2-54-205-26-79.compute-1.amazonaws.com;dbname=d2inorbah83i0g', 'yhckvxgcgcacyo', 'e6306620569a1139d6a94ddc7d37e75f67fddef4241cbfad241d8c7d2aa67fe8');
     $pnr=$_POST['pnr'];
     $sql1="select doj from ticket where ticket.pnr='$pnr';";
     $stmt=$con->prepare($sql1);
